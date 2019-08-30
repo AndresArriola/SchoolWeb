@@ -1,0 +1,58 @@
+header{
+	background: #EAEDED;
+	padding: 25px;
+}
+
+.logo{
+	width: 80px;
+	height: 80px;
+}
+
+.menu-bar{
+	vertical-align: middle;
+	margin-top: 25px;
+	margin-left: 50px;
+}
+
+.menu-bar a:hover{
+	text-decoration: none;
+	Color: gray;
+}
+
+.menu-list > li:not(:last-child){
+	margin-right: 40px;
+}
+
+nav ul li a{
+	color:black;
+	margin-right: 20px;
+}
+
+.login a{
+	color: #83ab23;
+}
+
+.login{
+		margin-top: 15px;
+		padding: 0;
+}
+
+footer{
+	background: #83ab23 ;
+}
+
+.social-footer{
+	margin-top: 5px;
+	margin-bottom: 1px;
+	margin-left: 5px;
+}
+
+	.social-footer a{
+		color: #EBEDEF;
+	}
+
+p{
+	font-size: 18px;
+	color: #EBEDEF;
+	margin: 5px;
+}
