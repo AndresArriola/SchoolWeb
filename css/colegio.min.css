@@ -217,7 +217,39 @@ height: 70%;
 		padding:12px
 		 0
 	}
+
+
+
+	
+	#mainNav2{
+		padding-top:0;
+		padding-bottom:0;
+		background-color:#01213c;
+		}
+	
+		#mainNav2 .navbar-brand{
+		font-size:1.75em;
+		-webkit-transition:all .3s;
+		transition:all .3s;
+		  }
+	
+	  #mainNav2 .navbar-nav .nav-item .nav-link{
+		padding:1.1em 1em!important;
+	  }
+	
+	  #mainNav2.navbar-shrink{
+		padding-top:0;
+		padding-bottom:0;
+		background-color:#01213c;
+	  }
+	
+	  #mainNav2.navbar-shrink .navbar-brand{
+		font-size:1.25em;
+		padding:12px
+		 0
+	  }
 }
+
 
 header.masthead{
 	text-align:center;
@@ -276,6 +308,66 @@ header.masthead .intro-text .intro-heading{
 		margin-top: 425px;
 	}
 }
+
+
+
+header.mision{
+	text-align:left;
+	color:#fff;
+	background-image:url(../img/primera4OP1.jpg);
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-position:center center;
+	background-size:cover;
+	height: 900px;
+	}
+  
+  header.mision .intro-text{
+	padding-top:150px;
+	padding-bottom:100px;
+  }
+  
+  header.mision .intro-text .intro-lead-in{
+	font-size:22px;
+	line-height:22px;
+	margin-bottom:25px;
+	font-family:Arial,sans-serif;
+	}
+  
+  header.mision .intro-text .intro-heading{
+	font-size:50px;
+	font-weight:400;
+	line-height:50px;
+	margin-bottom:25px;
+	font-family:Arial,sans-serif;
+  }
+  
+  @media (min-width:700px) and (max-width: 1024px){
+  
+	header.mision .intro-text{
+	  padding-top:300px;
+	  padding-bottom:200px;
+	}
+  
+	header.mision .intro-text .intro-lead-in{
+	font-size:40px;
+	line-height:40px;
+	margin-bottom:25px;
+	font-family:Arial,sans-serif;
+	}
+  
+	header.mision .intro-text .intro-heading{
+	  font-size:75px;
+	  font-weight:400;
+	  line-height:75px;
+	  margin-bottom:50px;
+	  font-family:Arial,sans-serif;
+	}
+
+	.botones{
+		margin-top: 425px;
+	}
+
 
 @media (min-width:400px) and (max-width: 699px){
  .container{
