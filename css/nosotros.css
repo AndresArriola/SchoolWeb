@@ -191,6 +191,7 @@ height: 70%;
 	#mainNav{
 		padding-top:5px;
 		padding-bottom:5px;
+		
 		}
 
 		#mainNav .navbar-brand{
@@ -217,9 +218,9 @@ height: 70%;
 }
 
 header.masthead{
-	text-align:center;
+	text-align:left;
 	color:#fff;
-	background-image:url(../img/primera2.jpg);
+	background-image:url(../img/primera4OP1.jpg);
 	background-repeat:no-repeat;
 	background-attachment:scroll;
 	background-position:center center;
