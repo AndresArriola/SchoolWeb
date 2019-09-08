@@ -28,7 +28,7 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">Colegio Humbolt</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,11 +37,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
+                    <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="../index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Informacion.html">Información</a>
+            <a class="nav-link js-scroll-trigger" style='color:white' href="#mision">Nosotros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="comunidad.html">Comunidad</a>
@@ -50,324 +50,115 @@
             <a class="nav-link js-scroll-trigger" href="admision.html">Admisión 2020</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#avisos">Avisos</a>
+            <a class="nav-link js-scroll-trigger" href="solicitudes.html">Solicitudes</a>
+          </li>
+          <li>
+            <li class="nav-item">
+              <div class="nav navbar-nav flex-row justify-content-between ml-auto">
+                <div class="dropdown order-1">
+                  <button type="button" id="dropdownMenu1" data-toggle="dropdown"  class="btn btn-outline-secondary">  <i class="fas fa-user usuario"></i>
+                    <span class="caret"></span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right mt-2">
+                   <div class="px-3 py-2">
+                     <form class="form">
+                      <div class="form-group">
+                        <input id="email-login" placeholder="Email" class="form-control form-control-sm" type="text" required="">
+                      </div>
+                      <div class="form-group">
+                        <input id="password" placeholder="Password" class="form-control form-control-sm" type="text" required="">
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" id="entrar" class="btn btn-primary btn-block">Entrar</button>
+                      </div>
+                      <div class="form-group text-center">
+                        <small><a href="#" class="recuperar" data-toggle="modal" data-target="#modalPassword">Recuperar Contraseña?</a></small>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
+  <!--Login con validación-->
+  <div id="modalPassword" class="modal fade" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Recuperar Contraseña</h3>
+          <button type="button" class="close font-weight-light" data-dismiss="modal" aria-hidden="true">×</button>
+        </div>
+        <div class="modal-body">
+          <p>Se enviará la contraseña a tu mail.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" id="enviar">Enviar</button>
+          <button class="btn btn-primary" data-dismiss="modal" id="cerrar" aria-hidden="true">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Header -->
-  <header class="masthead">
+<header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-heading"><h1>Misión</h1></div>  
-        <div class="intro-lead-in"><p>Es la de formar personas íntegras en lo cognitivo, afectivo y social, capaces de autoevaluarse, regularse y disciplinarse de acuerdo a los valores universales que rigen a nuestra sociedad a fin de que se integren a ésta como un aporte significativo y trascendente.</p></div>
-        <br>
-        <div class="intro-heading"><h1>Visión</h1></div>  
-        <div class="intro-lead-in"><p>Ser una comunidad educativa que entregue una educación de Calidad en efectividad y afectividad, estimulando los ritmos de aprendizaje, las diferencias individuales y el desarrollo de la autoestima. Centrando nuestro quehacer educativo en la persona.</p></div>
-          
-
-       
-      </div>
-    </div>
-   </div> 
+       <div class="intro-heading nosotros">Conoce un poco de nosotros...</div>
+     </div>
+   </div>
   </header>
 
-  <!-- Services -->
-  <section class="page-section" id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Cursos</h2>
-          <h3 class="section-subheading text-muted">tiene como proyecto formar individuos integrales, aptos para la vida y sus desafíos, responsables de sí mismos y de contribuir genuinamente con el desarrollo del conocimiento al servicio de la sociedad. En definitiva, sujetos con las competencias para aprender a conocer, a vivir con otros, a hacer y a ser.</h3>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-         <img class="rounded-circle img-fluid prekinder" src="../img/niño1.jpg" alt="">
-          <h4 class="service-heading">Pre-kinder</h4>
-          <p class="text-muted">Nos ocupamos de la formación de niñas y niños desde los 0 años, esta etapa fundamental para su desarrollo futuro en el despliegue de todas sus potencialidades.</p>
-        </div>
-        <div class="col-md-4">
-         <img class="rounded-circle img-fluid primaria" src="../img/niño2.jpg" alt="">
-          <h4 class="service-heading">Primaria</h4>
-          <p class="text-muted">Para el logro de su identidad personal y social, ejercer la ciudadanía y desarrollar actividades laborales y económicas que le permitan organizar su proyecto de vida y contribuir al desarrollo del país.</p>
-        </div>
-        <div class="col-md-4">
-         <img class="rounded-circle img-fluid secundaria" src="../img/niño4.jpg" alt="">
-          <h4 class="service-heading">Secundaria</h4>
-          <p class="text-muted">En la enseñanza media ofrecemos un programa mucho más especializado, preparando a los jovenes para la universidad o para desempeñar una profesión.</p>
-        </div>
+
+<!-- Services -->
+<section class="page-section" id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Quienes Somos</h2>
       </div>
     </div>
-  </section>
 
-  <!-- Portfolio Grid -->
-  <section class="bg-light page-section" id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Cursos Opcionales</h2>
-          <h3 class="section-subheading text-muted">Nuestros estudaintes podrán escojer entre los diversos cursos, donde podrán desarrollar sus actividades favoritas.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="../img/musica.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Música</h4>
-            <p class="text-muted">Arte</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="../img/diseñoweb.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Diseño Web</h4>
-            <p class="text-muted">Diseño e Informática</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="../img/contabilidad.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Contabilidad</h4>
-            <p class="text-muted">Administración</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="../img/idioma.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Idiomas</h4>
-            <p class="text-muted">Idiomas</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="../img/escritura.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Escritura</h4>
-            <p class="text-muted">Literatura</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="../img/idioma.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Pintura</h4>
-            <p class="text-muted">Arte</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="row somos">
+      <div class="col-md-6">
+       <img class="rounded-circle img-fluid prekinder" src="../img/niño1.jpg" alt="">
+     </div>
+           <div class="col-md-6 contenido">
+         <h4 class="service-heading">Historia</h4>
+          <p class="text-muted">Desde 1970 venimos desarrollando un trabajo comprometido y de calidad que nos ha posicionado a nivel comunal y regional como colegios líderes y de gran prestigio. En esta tarea ha sido clave el destacado cuerpo docente con el que contamos, compuesto por profesionales de la educación altamente capacitados y un valorable equipo de asistentes y técnicos de las más diversas áreas..</p>
+     </div>
+   </div>
 
-  <!-- About -->
-  <section class="page-section" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Profesores</h2>
-          <h3 class="section-subheading text-muted">El Colegio Humbolt fomenta el respeto y la integración a través de la convivencia diaria, nuestro cuerpo docente tiene un rol destacado para llevar a la práctica diaria los valores del colegio. De allí que nuestro profesorado se destaca por su compromiso con la formación integral del alumno, su constante perfeccionamiento profesional y personal, su compromiso con el trabajo en equipo y en el apoyo a todas las actividades del colegio.</h3>
+ <div class="row somos"> 
+     <div class="col-md-6">
+       <img class="rounded-circle img-fluid primaria" src="../img/niño2.jpg" alt="">
+     </div>
+     <div class="col-md-6 contenido">
+          <h4 class="service-heading">Mision</h4>
+          <p class="text-muted">Busca formar hombres y mujeres para los demás, ayudando al crecimiento de personas conscientes, competentes, compasivas y comprometidas que encarnen el diálogo de la fe con la cultura y su enriquecedora diversidad, especialmente alimentada por el hecho de estar ubicados en el corazón del gran Santiago.
+          </p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="timeline">
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="../img/profesor5.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>2016</h4>
-                  <h4 class="subheading">Alejandra Gongalves</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Pedagoga, especialista en el área de parvulos, especialización en educación especial.</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="../img/profesor1.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>Maryo 2013</h4>
-                  <h4 class="subheading">Mary Smith</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Profesional en el área de idiomas, dominalndo 5 (ingles, español, frances, aleman y portuguez), la educador Mary es la persan encargada organiza el proyecto de intercambio y edu</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="../img/profesor2.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>2017</h4>
-                  <h4 class="subheading">Carla Ruiz</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Matemática graduada en la Universidad de Oxford Reino Unido, con especialización en pedagogía.</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="../img/profesor4.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>2014</h4>
-                  <h4 class="subheading">Carlos Jerez</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Profesor de Eduación física, especializado en actividades</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <h4>Se Parte
-                  <br>De Nuestro
-                  <br>Equipo</h4>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+     </div>
 
-  <!-- Team -->
-  <section class="bg-light page-section" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Directiva</h2>
-          <h3 class="section-subheading text-muted">Lideres de la Institución</h3>
+     <div class="row somos"> 
+     <div class="col-md-6">
+       <img class="rounded-circle img-fluid primaria" src="../img/niño4.jpg" alt="">
+     </div>
+     <div class="col-md-6 contenido">
+          <h4 class="service-heading">Visión</h4>
+          <p class="text-muted">Buscamos propiciar aprendizajes con calidad y equidad en sus alumnos, por lo que junto a la formación académica, promueve una fuerte formación pastoral y religiosa y un serio interés por el desarrollo cultural, deportivo y tecnológico de sus niños y jóvenes.
+          </p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="../img/director.jpg" alt="">
-            <h4>Rodrigo Suarez</h4>
-            <p class="text-muted">Director</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="../img/subdirectora.jpg" alt="">
-            <h4>Sandra Rojas</h4>
-            <p class="text-muted">Sub-Directora</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="../img/secretaria.jpg" alt="">
-            <h4>Sofia Loresa</h4>
-            <p class="text-muted">Secretaria</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+     </div>
+   </div>
+</section>
 
+ 
   <!-- Contact -->
   <section class="page-section" id="contact">
     <div class="container">
@@ -452,212 +243,7 @@
       </div>
     </div>
   </footer>
-
-  <!-- Cursos Adicionales -->
-
-  <!-- Musica -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Música</h2>
-                <p class="item-intro text-muted">Casa de la música</p>
-                <img class="img-fluid d-block mx-auto" src="../img/musica.jpg" alt="">
-                <p>Nuestros estudiante podrán esoger entre los diversos intrumentos musicales, contamos con los profesores más especializados en el área.</p>
-                <ul class="list-inline">
-                  <li>Ínscripciones: Enero 2020</li>
-                  <li>Música</li>
-                  <li>Profesor: Gustavo Maldonado</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Cerrar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Diseño Web -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Diseño Web</h2>
-                <p class="item-intro text-muted">Ofrecemos este programa de diseño y programación Web.</p>
-                <img class="img-fluid d-block mx-auto" src="../img/diseñoweb.jpg" alt="">
-                <p>Con este curso continuo los estudiantes tendrán la opción de aprende a programar, crea plataformas de comercio electrónico, domina los lenguajes de código, design, herramientas de arquitectura, bases de datos y más..</p>
-                <ul class="list-inline">
-                  <li>Inscripciones: Enero 2020</li>
-                  <li>Informática</li>
-                  <li>Profesor: José Núñez</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Cerrar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contabilidad -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Contabilidad</h2>
-                <p class="item-intro text-muted">Ofrecemos un programa administrativo muy completos para nuestros alumnos..</p>
-                <img class="img-fluid d-block mx-auto" src="../img/contabilidad.jpg" alt="">
-                <p>En este programa, nuestros alumnos tendrán las condiciones de: distinguir y confección distintos tipos de informes y documentación técnica que se utiliza en la contabilidad, que son exigidos por la legislación tributaria chilena.</p>
-                <ul class="list-inline">
-                  <li>Inscripciones: Enero 2020</li>
-                  <li>Administración</li>
-                  <li>Profesor: Carlos Diaz</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Cerrar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Idiomas -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-              <h2 class="text-uppercase">Programa de Idiomas</h2>
-                <p class="item-intro text-muted">Nuestros alumnos tedrán la competencia de salir dominando mas de dos idiomas</p>
-                <img class="img-fluid d-block mx-auto" src="../img/idioma.jpg" alt="">
-                <p>Comprometidos con el desarrollo de nuestros alumnos. Gracias a nuestra experiencia en capacitación flexible, hemos desarrollado cursos de frances, aleman y portuguez. Contamos con 7 niveles de estudio.</p>
-                <ul class="list-inline">
-                  <li>Inscripciones: Enero 2020</li>
-                  <li>Idiomas</li>
-                  <li>Profesora: Mary Smith/Jhon Calvin</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Cerrar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Escritura -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Escritura y filosofía</h2>
-                <p class="item-intro text-muted">Programa dedicado a la escritura y lectura de filosofía</p>
-                <img class="img-fluid d-block mx-auto" src="../img/escritura.jpg" alt="">
-                <p>El objetivo principal de este programa es incentivar la creatividad y el estilo propio. Nuestros alumnos aprenderán a escribir con claridad, a conocer los mecanismos esenciales de una narración, a hacer un uso creativo de la memoria y de la fantasía y a construir una historia que seduzca al lector.</p>
-                <ul class="list-inline">
-                  <li>Inscripciones: Enero 2020</li>
-                  <li>Lietratura</li>
-                  <li>Profesor: ignacio Beltran</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Cerrar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Pintura -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Pintura</h2>
-                <p class="item-intro text-muted">Creatividad para nuestros alumnos</p>
-                <img class="img-fluid d-block mx-auto" src="../img/Pintuta.jpg" alt="">
-                <p>Este programa explotamos la creatividad de nuestros alumnos, contamos con varios niveles.</p>
-                <ul class="list-inline">
-                  <li>Inscripciones: Enero 2020</li>
-                  <li>Profesor: Victor Martinez</li>
-                  <li>Arte</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Cerrar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+ 
   <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
