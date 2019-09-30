@@ -265,7 +265,11 @@ height: 70%;
 header.masthead{
 	text-align:left;
 	color:#fff;
+<<<<<<< HEAD
 
+=======
+	background-image:url();
+>>>>>>> b46ffabbba85219289199f2a8f10fb89a8a6ee1d
 	background-repeat:no-repeat;
 	background-attachment:scroll;
 	background-position:center center;
