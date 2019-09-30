@@ -68,7 +68,7 @@
 	color: #01213c;
 }
 
-#entrar, #enviar, #cerrar{
+#entrar, #enviar, #cerrar, .enviar, .enviarp{
 	background-color: #bf9751;
 	border-color:#01213c;
 	border-width: 3px;
@@ -258,7 +258,7 @@ height: 70%;
 header.masthead{
 	text-align:left;
 	color:#fff;
-	background-image:url(../img/primera4OP1.jpg);
+	background-image:url(../img/principal5.jpg);
 	background-repeat:no-repeat;
 	background-attachment:scroll;
 	background-position:center center;

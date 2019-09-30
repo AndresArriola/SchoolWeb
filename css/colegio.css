@@ -68,7 +68,7 @@
 	color: #01213c;
 }
 
-#entrar, #enviar, #cerrar{
+#entrar, #enviar, #cerrar, .enviar{
 	background-color: #bf9751;
 	border-color:#01213c;
 	border-width: 3px;
